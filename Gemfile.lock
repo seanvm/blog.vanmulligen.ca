@@ -34,6 +34,7 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
+    redcarpet (3.4.0)
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.23)
@@ -46,7 +47,8 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-paginate
+  redcarpet
   support-for
 
 BUNDLED WITH
-   1.14.6
+   1.17.1
