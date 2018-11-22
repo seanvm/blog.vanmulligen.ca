@@ -14,11 +14,11 @@ The answer: Babel.
 
 Babel has caught quite a bit of flack in recent years, and in some cases, for good reason. Debugging can become more difficult with Babel, and some of its features (e.g. minification) are generally not beneficial server-side. However, new releases for the JS language are going to continue to come down the pipeline. 
 
-In my opinion, establishing a workflow for your project that allows you to take advantage of new features without forcing your consumers to upgrade their Node veresion is a good thing.
+In my opinion, establishing a workflow for your project that allows you to take advantage of new features without forcing your consumers to upgrade their Node version is a good thing.
 
 Fortunately, setting up a workflow to transpile ES9 code using Babel 7 is fairly straightforward. The following steps will get you started with the skeleton of a project that will allow you to create backwards compatible NPM packages using ES9 code.
 
-I will assume you are starting from scratch, so the first step is to create your project folder, and set up NPM. 
+I will assume you are starting from scratch, so the first step is to create your project folder and set up NPM. 
 ````
 mkdir myProject
 cd myProject
@@ -47,7 +47,7 @@ Configure Babel by creating a `.babelrc` file in your root directory with the fo
 }
 ````
 
-This config file tells Babel which version of node to transpile for. For the purposes of this exercise we will assume that you are running a version of node that does not support ES9, so we will target the current version. However, you can specify a specific version if you want.
+This config file tells Babel which version of Node to transpile for. For the purposes of this exercise we will assume that you are running a version of Node that does not support ES9, so we will target the current version. However, you can specify a specific version if you want.
 
 Within your project folder, create a `src` and `lib` folder:
 
@@ -55,7 +55,7 @@ Within your project folder, create a `src` and `lib` folder:
 mkdir lib src
 ````
 
-The `src` folder will contain your ES9 code, and will be what you would keep in your version control (e.g. Git). The `lib` directory will contain your transpiled code, and will be what you upload to NPM.
+The `src` folder will contain your ES9 code and will be what you would keep in your version control (e.g. Git). The `lib` directory will contain your transpiled code and will be what you upload to NPM.
 
 Setup your build script to output to your `lib` directory:
 ```json
@@ -66,7 +66,7 @@ Setup your build script to output to your `lib` directory:
   },
 ````
 
-NPM also supports a [prepare][npm-prepare]{:target="_blank"} script that will be run before the package is packed and published. You can use this to ensure that your module is transpiled when you go to pubslish:
+NPM also supports a [prepare][npm-prepare]{:target="_blank"} script that will be run before the package is packed and published. You can use this to ensure that your module is transpiled when you go to publish:
 
 ```json
 "scripts": {
@@ -76,7 +76,7 @@ NPM also supports a [prepare][npm-prepare]{:target="_blank"} script that will be
   },
 ````
 
-Update your module's entrypoint within the `package.json` to point to your `lib` directory. For example:
+Update your module's entry point within the `package.json` to point to your `lib` directory. For example:
 
 ```json
 {
