@@ -1,12 +1,12 @@
 {
-  "name": "long-haul",
+  "name": "blog.vanmulligen.ca",
   "version": "0.0.0",
-  "description": "A minimal, type-focused Jekyll theme. ",
+  "description": "Blog for vanmulligen.ca",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Brian Maier Jr.",
+  "author": "Sean van Mulligen",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.3",
@@ -14,10 +14,6 @@
     "gulp-autoprefixer": "1.0.0",
     "gulp-cssnano": "^2.1.2",
     "gulp-sass": "^2.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/brianmaierjr/long-haul.git"
   },
   "keywords": [
     "jekyll",
