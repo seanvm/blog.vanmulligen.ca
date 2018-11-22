@@ -4,7 +4,7 @@ description: Writing code, learning, and most importantly, having fun.
 url: https://blog.vanmulligen.ca
 baseurl: ""
 paginate_path: "blog/page:num/"
-permalink: blog/:title/
+permalink: :year/:title/
 
 markdown: kramdown
 # markdown: redcarpet
