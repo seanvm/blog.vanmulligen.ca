@@ -4,7 +4,7 @@ title:  "Transpiling And Publishing ES9 NPM Modules With Babel 7"
 date:   2018-11-21
 ---
 
-<span class="dropcap">W</span>ith 2018 coming to an end, we have seen adoption of the Node.js 8 runtime by [AWS Lambda][aws-lambda]{:target="_blank"} as well as [Google Cloud Functions][google_cloud_functions]{:target="_blank"}. Native support for ES8's async functions using async/await has been much anticipated, and is definitely a much welcomed step forward for anyone using server-side Javascript.
+<span class="dropcap">T</span>here is no doubt that 2018 has been a great year to be a Javascript developer. In particular, we have seen adoption of the Node.js 8 runtime by [AWS Lambda][aws-lambda]{:target="_blank"} as well as [Google Cloud Functions][google_cloud_functions]{:target="_blank"}. Native support for ES8's async functions using async/await has been much anticipated, and is definitely a much welcomed step forward for anyone using server-side Javascript.
 
 However, with the release of ES2018 (ES9) there are now even more cool features to add to your developer toolkit, such as [Async Iteraters][async-iterators]{:target="_blank"} and [Object Rest/Spread Properties][rest-elements]{:target="_blank"}. Unfortunately, support for these features requires Node v10+. While many developers may be afforded the luxury of being able to use whichever node version they desire, for others (e.g. those using AWS Lambda) the requirements are more stringent.
 
@@ -126,7 +126,7 @@ Your `package.json` should now look something like the following:
 }
 ````
 
-When you are ready, you can now publish a backwards compatible NPM module written with ES9 features to NPM by running the command `npm publish`.
+When you are ready, you can now publish a backwards compatible NPM module written with ES9 features to NPM by running the command `npm publish`. Of course, you can also use this method to transpile your ES6, ES7, or ES8 code as well.
 
 
 [jekyll-gh]: https://github.com/mojombo/jekyll
