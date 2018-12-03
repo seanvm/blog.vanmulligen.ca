@@ -2,6 +2,7 @@
 layout: post
 title:  "You can now use Ruby (and any other language you want) with AWS Lambda via the Runtime API"
 date:   2018-11-29
+comments: true
 ---
 
 <span class="dropcap">A</span>WS re:Invent has had many great announcements so far, such as [Amazon Personalize][amazon-personalize]{:target="_blank"}, Amazon's machine learning recommendation engine, and [Amazon Forecast][amazon-forecast]{:target="_blank"}, a deep learning service for time-series data forecasting.

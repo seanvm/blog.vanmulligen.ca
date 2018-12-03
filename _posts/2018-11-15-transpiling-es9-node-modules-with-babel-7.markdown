@@ -2,6 +2,7 @@
 layout: post
 title:  "Transpiling And Publishing ES9 NPM Modules With Babel 7"
 date:   2018-11-21
+comments: true
 ---
 
 <span class="dropcap">T</span>here is no doubt that 2018 has been a great year to be a Javascript developer. In particular, we have seen adoption of the Node.js 8 runtime by [AWS Lambda][aws-lambda]{:target="_blank"} as well as [Google Cloud Functions][google_cloud_functions]{:target="_blank"}. Native support for ES8's async functions using async/await has been much anticipated, and is definitely a much welcomed step forward for anyone using server-side Javascript.
