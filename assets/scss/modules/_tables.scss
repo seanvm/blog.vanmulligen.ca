@@ -16,13 +16,13 @@ table {
 	}
 }
 
-tr {
-	border-bottom: 1px solid lighten($grey, 15%);
+// tr {
+// 	border-bottom: 1px solid lighten($grey, 15%);
 
-	&:nth-child(even) {
-		background-color: lighten($grey, 30%);
-	}
-}
+// 	&:nth-child(even) {
+// 		background-color: lighten($grey, 30%);
+// 	}
+// }
 
 td {
 	padding: 7px;
