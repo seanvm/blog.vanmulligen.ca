@@ -9,7 +9,7 @@ permalink: :year/:title/
 markdown: kramdown
 # markdown: redcarpet
 highlighter: rouge
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll-gist]
 paginate: 5
 
 navigation:
